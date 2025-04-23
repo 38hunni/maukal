@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.2;
+}
+
+/*global*/
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 1.2rem;
+}
+h1{
+    text-transform: uppercase;
+}
+h2{
+    text-transform: capitalize;
+}
+.text-xsm{
+    font-size: 1rem;
+    font-weight: 100;
+}
+.text-sm{
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+.text-md{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.text-l{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.text-xl{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.text-xxl{
+    font-size: 4rem;
+    font-weight: 700;
+}
+button{
+    background-color: orange;
+    text-transform: capitalize;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 0.3rem;
+
+}
+
+/*header*/
+.main-header{
+    background-color: #fff;
+    color: #000;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.src{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.src i{
+    margin-right: 0.5rem;
+}
+.src input{
+    position: relative;
+    border-radius: 10px;
+    margin-left: 1.1rem;
+}
+.src button{
+  margin-left: 15px;  
+}
+.src button i{
+    margin-left: 8px;  
+}
+.icn{
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+}
+.icn i{
+    margin-right: 1.5rem;
+}
+.icn img{
+    margin-right: 1.5rem;
+    background-color: rgba(204, 204, 204, 0.3);
+}
+
+/*navigation*/
+.navbar{
+    background-color: #333;   
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 1.2rem;
+}
+.navbar ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*hero*/
+.hero{
+    position: relative;
+    background-image: url(img/cart.png);
+    height: 100vh;
+    padding-top: 9em;
+}
+.hero button{
+    margin: 2.4rem 0;
+}
+.hero .frequent{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*special-ads*/
+.ads-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 1.3rem;
+}
+.special{
+    position: relative;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    line-height: 1.3;
+    padding: 10px;
+}
+.special div a{
+    position: absolute;
+    color: #fff;
+    padding-top: 4rem;
+}
+
+/*product*/
+.product{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+}
+.product-head h1{
+    margin-bottom: 2rem;
+}
+.product img{
+    width: 100px;
+}
+.product div:nth-child(odd){
+    background-color: #ccc;
+}
+.product div:nth-child(even){
+    background-color: #333;
+}
+
+/*ads 2*/
+.ads-2{
+    background-color: #000;
+    color: #fff;
+}
+.ads-2 .container{
+    display: flex;
+    justify-content: space-between;
+}
+.ads-2 button{
+    margin-top: 2rem;
+}
+
+/*info*/
+.info{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3rem auto;
+}
+.info i{
+    background-color: rgba(204, 204, 204, 0.2);
+    border-radius: 100px;
+    margin: 1rem;
+    padding: 10px;
+}
+
+/*newsletter*/
+.news{
+    position: relative;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.5;
+    margin-bottom: 1.3rem;
+}
+.news input{
+    width: 70%;
+    border: none;
+    border-radius: 15px;
+    margin-top: 2.2rem;
+    padding: 10px;
+}
+.news div{
+    position: relative;
+    top: 2rem;
+}
+
+/*footer*/
+.main-footer{
+    background-color: rgba(255, 165, 0, 0.5);
+    text-align: center;
+    padding: 1.3rem;
+}
+.main-footer .container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+    border-bottom: #000 solid 1px;
+    padding-bottom: 5rem;
+}
+.main-footer li{
+    list-style: none;
+    line-height: 1.8;
+}
+.main-footer li h4{
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.main-footer li a, .main-footer li p{
+    color: #4e4949;
+    text-decoration: none;
+    font-size: 20px;
+}

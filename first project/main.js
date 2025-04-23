@@ -1,0 +1,1 @@
+document.getElementById('freq-item').innerHTML = 'hello'
